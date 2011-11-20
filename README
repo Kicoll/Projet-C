@@ -1,0 +1,51 @@
+|------------------------------------------------------------------|
+|																				|
+|            	            	Projet de C	         					|
+|                               Attrape sous                              |
+|																				|
+|------------------------------------------------------------------|
+
+	----- Attention ----
+	
+	- Ne recompiler pas le projet global !!
+	- Insérez les modifications de vos méthodes dans le projet global, autrement elles seront omises.
+	- Si vous souhaitez effectuer des tests, faites les dans le dossier provisoir prévu à cet effet.
+	- Lors des publications insérer le raison, et pas juste un commentaire bidon.
+	- Ne modifier le changelog global que lorsque vous avez changé des choses dans le code sources global.
+	- Modifier le changelog de chaque partie à chaque modifications dans votre partie.
+	- Pas d'accent dans les commentaires, changelog ou readme.
+	
+	----- Répartition -----
+	
+	* Thomas : Affichage, Deplacement des pions, Menu
+	* Gregoire : Aide, Affichage score et tour, IA
+	* Charles : Mise en place initial, Verification deplacement, Verification fin
+	
+	----- Task List -----
+	
+	O Afficher le plateu de jeu
+	O IA
+	O Verification fin de partie
+	O Affichage score est tour
+	O Aide
+	O Verification deplacement
+	O Deplacement des pions
+	O Menu
+	O Mise en place initial
+	
+	----- Cahier des charges -----
+	
+	O  Affiche le plateau de jeu
+	O Gère la position initial des pions
+	O Permet à deux joueurs humain de jouer ensemble
+	O Propose un systeme de reperage simple pour choisir un pion
+	O Affiche le nombre de tours
+	O Affiche le score des joueurs
+	
+	----- Planning -----
+	
+	+ 23 novembre 2011    : sceance TP
+	+ 27 novembre 2011    : jeu fonctionnel
+	+ 4 decembre 2011	  : IA
+	+ 10 decembre 2011    : derniere build stable
+	+ 14 decembre 2011    : Soutenance
