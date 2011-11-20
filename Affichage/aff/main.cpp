@@ -33,8 +33,11 @@ int main ( int argc, char** argv )
 {
     bool depla=false;
     bool first[2] = {true,true};
-    player=1;
+    player=0;
     int color=0;
+
+    int xtab;
+    int ytab;
 
     continuer=1;
     clic=false;
@@ -80,18 +83,18 @@ int main ( int argc, char** argv )
         {
             event_SDL(event);
 
-            /*if(first[player+1] && clic)
+            if(first[player] && clic)
             {
                 x=(x-50)/62;
                 y=(y-50)/62;
                 if(pion[x][y]==1)
                 {
                     pion[x][y]=0;
-                    first[player+1]=false;
+                    first[player]=false;
                     tour();
                 }
                 clic=false;
-            }*/
+            }
 
 
             SDL_FillRect(screen, 0, SDL_MapRGB(screen->format, 238, 143, 15));
@@ -114,12 +117,12 @@ int main ( int argc, char** argv )
 
             if(clic && !depla)
             {
-                depla=true;
-                x=(x-50)/62;
-                y=(y-50)/62;
-                color=pion[x][y];
-                pion[x][y]=0;
+                xtab=(x-50)/62;
+                ytab=(y-50)/62;
+                color=pion[xtab][ytab];
+                pion[xtab][ytab]=0;
                 draw_pion(x-21,y-21,color);
+                depla=true;
             }
 
             if(depla && !clic)
@@ -317,9 +320,9 @@ void random_plateau()
 void tour()
 {
     player++;
-    if(player>2)
+    if(player>1)
     {
-        player=1;
+        player=0;
     }
 }
 
