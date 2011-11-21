@@ -184,7 +184,7 @@
 	"begin_code.h"
 	"close_code.h"
 
-1321828828 source:c:\users\lord nazdar\git\projet-c\affichage\aff\main.cpp
+1321864821 source:c:\users\lord nazdar\git\projet-c\affichage\aff\main.cpp
 	<iostream>
 	<SDL.h>
 	<time.h>

@@ -1,186 +1,184 @@
-result : 3
-here
-j :33
-r :19
-result : 5
-here
-j :32
-result : 1
-here
-j :31
-result : 5
-here
-j :30
-result : 1
-here
-j :29
-result : 3
-here
-j :28
-r :18
 result : 2
 here
-j :27
+j :33
 n :9
+result : 3
+here
+j :32
+r :19
+result : 3
+here
+j :31
+r :18
+result : 4
+here
+j :30
+result : 2
+here
+j :29
+n :8
+result : 5
+here
+j :28
+result : 1
+here
+j :27
 result : 1
 here
 j :26
-result : 2
-here
-j :25
-n :8
 result : 3
 here
-j :24
+j :25
 r :17
 result : 2
 here
-j :23
+j :24
 n :7
-result : 5
+result : 1
+here
+j :23
+result : 1
 here
 j :22
-result : 4
+result : 3
 here
 j :21
-result : 2
+r :16
+result : 5
 here
 j :20
-n :6
-result : 5
+result : 1
 here
 j :19
 result : 4
 here
 j :18
-result : 5
+result : 4
 here
 j :17
-result : 4
-here
-j :16
 result : 2
 here
-j :15
-n :5
-result : 4
-here
-j :14
-result : 3
-here
-j :13
-r :16
+j :16
+n :6
 result : 1
 here
-j :12
+j :15
+result : 2
+here
+j :14
+n :5
+result : 2
+here
+j :13
+n :4
 result : 3
 here
-j :11
+j :12
 r :15
 result : 2
 here
+j :11
+n :3
+result : 5
+here
 j :10
-n :4
-result : 4
+result : 1
 here
 j :9
-result : 2
+result : 3
 here
 j :8
-n :3
-result : 3
+r :14
+result : 2
 here
 j :7
-r :14
-result : 3
+n :2
+result : 1
 here
 j :6
-r :13
-result : 5
+result : 3
 here
 j :5
-result : 1
+r :13
+result : 3
 here
 j :4
-result : 2
+r :12
+result : 1
 here
 j :3
-n :2
-result : 3
+result : 1
 here
 j :2
-r :12
-result : 4
+result : 1
 here
 j :1
-result : 1
+result : 2
 here
 j :0
-result : 5
+n :1
+result : 1
 here
 j :-1
-result : 2
+result : 4
 r :11
-result : 3
-r :10
-result : 3
-r :9
-result : 3
-r :8
-result : 1
+result : 5
 here
 j :-2
-result : 2
-r :7
-result : 2
-r :6
-result : 1
+result : 5
 here
 j :-3
+result : 2
+r :10
+result : 4
+r :9
+result : 4
+r :8
+result : 4
+r :7
 result : 1
 here
 j :-4
-result : 4
+result : 2
+r :6
+result : 3
 r :5
 result : 1
 here
 j :-5
-result : 2
-r :4
 result : 4
-r :3
+r :4
 result : 1
 here
 j :-6
-result : 4
-r :2
+result : 3
+r :3
 result : 1
 here
 j :-7
-result : 2
+result : 4
+r :2
+result : 3
 r :1
-result : 2
+result : 4
 r :0
 result : 4
-n :1
+n :0
+result : 4
+result : 4
+result : 3
+result : 3
+result : 3
 result : 5
 here
 j :-8
-result : 5
+result : 1
 here
 j :-9
 result : 1
 here
 j :-10
+result : 4
 result : 1
 here
 j :-11
-result : 3
-n :0
-result : 2
-result : 4
-result : 2
-result : 1
-here
-j :-12
-result : 2

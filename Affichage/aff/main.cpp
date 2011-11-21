@@ -11,10 +11,13 @@ void draw_pion(int x, int y, int color);
 void event_SDL(SDL_Event event);
 void random_plateau();
 void tour();
+void chargement(int state);
 
 using namespace std;
 
 SDL_Surface *screen;
+SDL_Surface *chargement_surf;
+SDL_Rect position_charg;
 SDL_Surface *recta, *fond;
 SDL_Surface *blanc, *noir;
 SDL_Surface *pion_j, *pion_n, *pion_r;
@@ -61,19 +64,31 @@ int main ( int argc, char** argv )
         return 0;
     }
 
+    chargement(0);
     fond = SDL_LoadBMP("image/1/fond.bmp");
+    chargement(10);
     recta = SDL_LoadBMP("image/1/cadre.bmp");
+    chargement(20);
     blanc = SDL_LoadBMP("image/1/blanc.bmp");
+    chargement(30);
     noir = SDL_LoadBMP("image/1/noir.bmp");
+    chargement(40);
     pion_j = SDL_LoadBMP("image/1/pion_j.bmp");
+    chargement(50);
     SDL_SetColorKey(pion_j, SDL_SRCCOLORKEY, SDL_MapRGB(pion_j->format, 255, 255, 255));
+    chargement(60);
     pion_n = SDL_LoadBMP("image/1/pion_n.bmp");
+    chargement(70);
     SDL_SetColorKey(pion_n, SDL_SRCCOLORKEY, SDL_MapRGB(pion_n->format, 24, 255, 0));
+    chargement(80);
     pion_r = SDL_LoadBMP("image/1/pion_r.bmp");
+    chargement(90);
     SDL_SetColorKey(pion_r, SDL_SRCCOLORKEY, SDL_MapRGB(pion_r->format, 24, 255, 0));
-
-
     random_plateau();
+    chargement(100);
+
+
+
 
     //boucle jeu
     while(continuer)
@@ -232,7 +247,7 @@ void draw_pions_plat()
 
 void event_SDL(SDL_Event event)
 {
-    SDL_WaitEvent(&event);
+    SDL_PollEvent(&event);
     switch(event.type)
     {
         case SDL_QUIT:
@@ -342,4 +357,15 @@ void draw_pion(int x, int y, int color)
             SDL_BlitSurface(pion_r,NULL,screen,&position);
             break;
     }
+}
+
+void chargement(int state)
+{
+    int size = 600/100;
+    position_charg.x=0;
+    position_charg.y=200;
+    chargement_surf = SDL_CreateRGBSurface(SDL_HWSURFACE, size*state, 100, 32, 0, 0, 0, 0);
+    SDL_FillRect(chargement_surf, NULL, SDL_MapRGB(screen->format, 255, 0, 0));
+    SDL_BlitSurface(chargement_surf, NULL, screen, &position_charg);
+    refresh_SDL();
 }
